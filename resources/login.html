@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="جسر الأمل لذوي الاحتياجات الخاصة - تسجيل الدخول">
+    <title>جسر الأمل | تسجيل الدخول</title>
+
+    <!-- Google Fonts: Beiruti -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page" id="loginPage">
+
+    <div class="auth-overlay"></div>
+
+    <!-- Language Toggle -->
+    <div class="auth-lang">
+        <button class="navbar__lang-btn">
+            <i class="fas fa-globe"></i>
+            <span>العربية</span>
+        </button>
+    </div>
+
+    <main class="auth-container">
+        <div class="auth-card">
+            <!-- Logo -->
+            <div class="auth-card__logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="جسر الأمل">
+                </a>
+            </div>
+
+            <!-- Headings -->
+            <div class="auth-card__header">
+                <h1 class="auth-card__title">تسجيل الدخول إلى حسابك</h1>
+                <p class="auth-card__subtitle">مرحباً بك من جديد، أدخل للمتابعة والاستكشاف</p>
+            </div>
+
+            <!-- Form -->
+            <form class="auth-form" id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">البريد الإلكتروني</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="loginEmail" placeholder="البريد الإلكتروني" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">كلمة المرور</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="loginPassword" placeholder="كلمة المرور" required>
+                        <button type="button" class="password-toggle" aria-label="تبديل رؤية كلمة المرور">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="auth-form__options">
+                    <a href="forget-password.html" class="forgot-password">نسيت كلمة السر؟</a>
+                </div>
+
+                <button type="submit" class="btn btn--primary auth-btn">تسجيل الدخول</button>
+            </form>
+
+            <!-- Footer -->
+            <div class="auth-card__footer">
+                <p>ليس لديك حساب حتى الآن؟ <a href="register.html">سجل الآن</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

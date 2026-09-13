@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="جسر الأمل لذوي الاحتياجات الخاصة - النصائح">
+    <title>جسر الأمل | النصائح</title>
+
+    <!-- Google Fonts: Beiruti -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ============================================
+         HEADER / NAVIGATION
+    ============================================= -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="index.html" class="navbar__logo">
+                    <img src="images/logo.svg" alt="جسر الأمل" class="navbar__logo-img">
+                </a>
+
+                <!-- Navigation Links -->
+                <ul class="navbar__menu" id="navMenu">
+                    <li><a href="index.html" class="navbar__link">الرئيسية</a></li>
+                    <li><a href="about.html" class="navbar__link">من نحن</a></li>
+                    <li><a href="index.html#services" class="navbar__link">الخدمات</a></li>
+                    <li><a href="educational-content.html" class="navbar__link">المحتوى التوعوي</a></li>
+                    <li><a href="contact.html" class="navbar__link">تواصل معنا</a></li>
+                </ul>
+
+                <!-- Header Actions -->
+                <div class="navbar__actions">
+                    <div class="navbar__profile">
+                        <button class="navbar__profile-trigger" id="profileTrigger" aria-label="الملف الشخصي">
+                            <img src="images/avatar-placeholder.svg" alt="الملف الشخصي" class="navbar__profile-img">
+                        </button>
+                        <div class="navbar__dropdown" id="profileDropdown">
+                            <ul class="navbar__dropdown-list">
+                                <li><a href="personal-page.html"><i class="fas fa-user"></i> <span>الصفحة
+                                            الشخصية</span></a></li>
+                                <li><a href="orders.html"><i class="fas fa-clipboard-list"></i> <span>الطلبات</span></a>
+                                </li>
+                                <li><a href="advices.html"><i class="fas fa-lightbulb"></i> <span>النصائح</span></a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> <span>تسجيل
+                                            الخروج</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="navbar__lang-btn">
+                        <i class="fas fa-globe"></i>
+                        <span>العربية</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="navbar__toggle" id="navToggle" aria-label="القائمة">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============================================
+             BREADCRUMB SECTION
+        ============================================= -->
+        <section class="page-header" id="page-header">
+            <div class="container">
+                <div class="breadcrumb breadcrumb--details">
+                    <a href="index.html">الرئيسية</a>
+                    <i class="fas fa-chevron-left"></i>
+                    <span class="active">النصائح</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             ADVICES PAGE CONTENT
+        ============================================= -->
+        <section class="advices-section">
+            <div class="container">
+                <div class="advices-layout">
+                    <!-- Sidebar Filters -->
+                    <aside class="advices-sidebar">
+                        <div class="filter-header">
+                            <h2 class="filter-header__title">تصفية الفيديوهات</h2>
+                            <a href="#" class="filter-header__reset">إعادة تعيين</a>
+                        </div>
+
+                        <!-- Year Filter -->
+                        <div class="filter-group">
+                            <button class="filter-group__trigger active">
+                                <span>السنة</span>
+                                <i class="fas fa-chevron-up"></i>
+                            </button>
+                            <div class="filter-group__content">
+                                <label class="custom-radio">
+                                    <input type="radio" name="year" value="2026" checked>
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">2026 <span class="count">(106)</span></span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="year" value="2025">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">2025 <span class="count">(17)</span></span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="year" value="2024">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">2024 <span class="count">(9)</span></span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="year" value="2023">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">2023 <span class="count">(49)</span></span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="year" value="2022">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">2022 <span class="count">(2)</span></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Month Filter -->
+                        <div class="filter-group">
+                            <button class="filter-group__trigger active">
+                                <span>الشهر</span>
+                                <i class="fas fa-chevron-up"></i>
+                            </button>
+                            <div class="filter-group__content">
+                                <label class="custom-radio">
+                                    <input type="radio" name="month" value="january" checked>
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">يناير</span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="month" value="february">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">فبراير</span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="month" value="march">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">مارس</span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="month" value="april">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">أبريل</span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="month" value="may">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">مايو</span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="month" value="june">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">يونيه</span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="month" value="july">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">يوليو</span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="month" value="august">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">أغسطس</span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="month" value="september">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">سبتمبر</span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="month" value="october">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">أكتوبر</span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="month" value="november">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">نوفمبر</span>
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" name="month" value="december">
+                                    <span class="radio-mark"></span>
+                                    <span class="radio-label">ديسمبر</span>
+                                </label>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Main Content Grid -->
+                    <div class="advices-content">
+                        <div class="advices-header">
+                            <div class="content-search">
+                                <input type="text" placeholder="ابحث هنا ..." id="advicesSearchInput">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="content-sort">
+                                <button class="sort-dropdown-btn" id="sortDropdownBtn">
+                                    <span>ترتيب حسب : الكل</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="sort-dropdown-menu" id="sortDropdownMenu">
+                                    <button class="sort-option active" data-filter="all">الكل</button>
+                                    <button class="sort-option" data-filter="latest">الأحدث</button>
+                                    <button class="sort-option" data-filter="oldest">الأقدم</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advices-grid">
+                            <!-- Video Card 1 -->
+                            <div class="content-card">
+                                <div class="content-card__image">
+                                    <img src="images/service-autism.png" alt="فيديو">
+                                    <div class="content-card__play-icon">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="content-card__body">
+                                    <h3 class="content-card__title">الرسوم المتحركة حول داون</h3>
+                                    <p class="content-card__date">12 يناير, 2026</p>
+                                </div>
+                            </div>
+
+                            <!-- Video Card 2 -->
+                            <div class="content-card">
+                                <div class="content-card__image">
+                                    <img src="images/placeholder.jpg" alt="فيديو">
+                                    <div class="content-card__play-icon">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="content-card__body">
+                                    <h3 class="content-card__title">الرسوم المتحركة حول داون</h3>
+                                    <p class="content-card__date">12 يناير, 2026</p>
+                                </div>
+                            </div>
+
+                            <!-- Video Card 3 -->
+                            <div class="content-card">
+                                <div class="content-card__image">
+                                    <img src="images/placeholder.jpg" alt="فيديو">
+                                    <div class="content-card__play-icon">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="content-card__body">
+                                    <h3 class="content-card__title">الرسوم المتحركة حول داون</h3>
+                                    <p class="content-card__date">12 يناير, 2026</p>
+                                </div>
+                            </div>
+
+                            <!-- Video Card 4 -->
+                            <div class="content-card">
+                                <div class="content-card__image">
+                                    <img src="images/placeholder.jpg" alt="فيديو">
+                                    <div class="content-card__play-icon">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="content-card__body">
+                                    <h3 class="content-card__title">الرسوم المتحركة حول داون</h3>
+                                    <p class="content-card__date">12 يناير, 2026</p>
+                                </div>
+                            </div>
+
+                            <!-- Video Card 5 -->
+                            <div class="content-card">
+                                <div class="content-card__image">
+                                    <img src="images/placeholder.jpg" alt="فيديو">
+                                    <div class="content-card__play-icon">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="content-card__body">
+                                    <h3 class="content-card__title">الرسوم المتحركة حول داون</h3>
+                                    <p class="content-card__date">12 يناير, 2026</p>
+                                </div>
+                            </div>
+
+                            <!-- Video Card 6 -->
+                            <div class="content-card">
+                                <div class="content-card__image">
+                                    <img src="images/placeholder.jpg" alt="فيديو">
+                                    <div class="content-card__play-icon">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="content-card__body">
+                                    <h3 class="content-card__title">الرسوم المتحركة حول داون</h3>
+                                    <p class="content-card__date">12 يناير, 2026</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="pagination">
+                            <button class="pagination__btn pagination__btn--prev" aria-label="السابق">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <div class="pagination__numbers">
+                                <button class="pagination__number active">1</button>
+                                <button class="pagination__number">2</button>
+                                <button class="pagination__number">3</button>
+                                <span class="pagination__dots">...</span>
+                                <button class="pagination__number">8</button>
+                            </div>
+                            <button class="pagination__btn pagination__btn--next" aria-label="التالي">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             TRUST CARDS SECTION
+        ============================================= -->
+        <section class="trust-cards bg-light">
+            <div class="container">
+                <div class="trust-cards__grid">
+                    <!-- Experience Card -->
+                    <div class="trust-card trust-card--yellow">
+                        <div class="trust-card__icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="trust-card__content">
+                            <h3 class="trust-card__title">الخبرة</h3>
+                            <p class="trust-card__text">أخصائيون تخاطب و تربويون محترفون</p>
+                        </div>
+                    </div>
+                    <!-- Specialization Card -->
+                    <div class="trust-card trust-card--purple">
+                        <div class="trust-card__icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="trust-card__content">
+                            <h3 class="trust-card__title">التخصص</h3>
+                            <p class="trust-card__text">خطط علاجية وتأهيلية متخصصة</p>
+                        </div>
+                    </div>
+                    <!-- Trust Card -->
+                    <div class="trust-card trust-card--green">
+                        <div class="trust-card__icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="trust-card__content">
+                            <h3 class="trust-card__title">الثقة</h3>
+                            <p class="trust-card__text">المصداقية والأمانة في التعامل</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             NEWSLETTER SECTION
+        ============================================= -->
+        <section class="newsletter newsletter--alt">
+            <div class="container">
+                <h2 class="newsletter__title">احصل على جميع أخبارنا وعروضنا في مكان واحد</h2>
+                <form class="newsletter__form" id="newsletterForm">
+                    <input type="email" class="newsletter__input" placeholder="أدخل البريد الإلكتروني" required
+                        aria-label="البريد الإلكتروني">
+                    <button type="submit" class="btn btn--primary newsletter__btn">تسجيل الدخول</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Footer Logo & Description -->
+                <div class="footer__brand">
+                    <img src="images/footer-logo.png" alt="جسر الأمل" class="footer__logo">
+                    <p class="footer__description">
+                        نهتم بتوفير الدعم اللازم لذوي الاحتياجات الخاصة في مجال اضطراب طيف التوحد و متلازمة داون ، فهو
+                        بمثابة شريان حياة للآباء .
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="فيسبوك"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="انستقرام"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer__links">
+                    <h3 class="footer__heading">روابط أخرى</h3>
+                    <ul class="footer__link-list">
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">مركز المساعدة</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer__contact">
+                    <h3 class="footer__heading">معلومات التواصل</h3>
+                    <ul class="footer__contact-list">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:bridge-of-hope@gmail.com">bridge-of-hope@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+966123456789">+966 123 456 7890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+201234567890">+20 123 4567 890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>الرياض، المملكة العربية السعودية</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <p>جميع الحقوق محفوظة لشركة تسوق © 2026 – جسر الأمل</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

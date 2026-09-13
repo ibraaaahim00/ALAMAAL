@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="جسر الأمل لذوي الاحتياجات الخاصة - الصفحة الشخصية">
+    <title>جسر الأمل | الصفحة الشخصية</title>
+
+    <!-- Google Fonts: Beiruti -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ============================================
+         HEADER / NAVIGATION
+    ============================================= -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="index.html" class="navbar__logo">
+                    <img src="images/logo.svg" alt="جسر الأمل" class="navbar__logo-img">
+                </a>
+
+                <!-- Navigation Links -->
+                <ul class="navbar__menu" id="navMenu">
+                    <li><a href="index.html" class="navbar__link">الرئيسية</a></li>
+                    <li><a href="about.html" class="navbar__link">من نحن</a></li>
+                    <li><a href="index.html#services" class="navbar__link">الخدمات</a></li>
+                    <li><a href="educational-content.html" class="navbar__link">المحتوى التوعوي</a></li>
+                    <li><a href="contact.html" class="navbar__link">تواصل معنا</a></li>
+                </ul>
+
+                <!-- Header Actions -->
+                <div class="navbar__actions">
+                    <div class="navbar__profile">
+                        <button class="navbar__profile-trigger" id="profileTrigger" aria-label="الملف الشخصي">
+                            <img src="images/avatar-placeholder.svg" alt="الملف الشخصي" class="navbar__profile-img">
+                        </button>
+                        <div class="navbar__dropdown" id="profileDropdown">
+                            <ul class="navbar__dropdown-list">
+                                <li><a href="personal-page.html"><i class="fas fa-user"></i> <span>الصفحة
+                                            الشخصية</span></a></li>
+                                <li><a href="orders.html"><i class="fas fa-clipboard-list"></i> <span>الطلبات</span></a>
+                                </li>
+                                <li><a href="advices.html"><i class="fas fa-lightbulb"></i> <span>النصائح</span></a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> <span>تسجيل
+                                            الخروج</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="navbar__lang-btn">
+                        <i class="fas fa-globe"></i>
+                        <span>العربية</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="navbar__toggle" id="navToggle" aria-label="القائمة">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============================================
+             BREADCRUMB SECTION
+        ============================================= -->
+        <section class="breadcrumb-section">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">الرئيسية</a>
+                    <i class="fas fa-chevron-left"></i>
+                    <span class="active">الصفحة الشخصية</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             PERSONAL PROFILE SECTION
+        ============================================= -->
+        <section class="personal-page">
+            <div class="container">
+                <!-- Profile Header: Avatar -->
+                <div class="profile-header">
+                    <div class="profile-header__avatar">
+                        <img src="images/avatar-user.png" alt="User Avatar" class="profile-header__img">
+                        <button class="profile-header__edit-btn" aria-label="تعديل الصورة">
+                            <i class="fas fa-pencil-alt"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Personal Information Form -->
+                <form class="personal-form" id="personalProfileForm">
+                    <div class="personal-form__grid">
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label class="form-label">الاسم</label>
+                            <input type="text" class="form-input" placeholder="الاسم" value="سعد بن محمد">
+                        </div>
+                        <!-- Mobile Number -->
+                        <div class="form-group">
+                            <label class="form-label">رقم الجوال</label>
+                            <input type="tel" class="form-input" placeholder="رقم الجوال" value="0501234567">
+                        </div>
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-input" placeholder="البريد الإلكتروني"
+                                value="saad@example.com">
+                        </div>
+                        <!-- Password -->
+                        <div class="form-group">
+                            <label class="form-label">كلمة المرور</label>
+                            <div class="form-input-wrapper">
+                                <input type="password" class="form-input" placeholder="كلمة المرور" value="12345678">
+                                <button type="button" class="form-input-toggle"><i
+                                        class="fas fa-eye-slash"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Child Information Section -->
+                    <div class="child-info">
+                        <h2 class="child-info__title">معلومات طفلي</h2>
+                        <div class="child-info__grid">
+                            <!-- Child's Name -->
+                            <div class="form-group">
+                                <label class="form-label">اسم الطفل</label>
+                                <input type="text" class="form-input" placeholder="اسم الطفل">
+                            </div>
+                            <!-- Date of Birth -->
+                            <div class="form-group">
+                                <label class="form-label">تاريخ الميلاد</label>
+                                <div class="form-input-wrapper">
+                                    <input type="date" class="form-input" placeholder="يوم / شهر / سنة">
+                                    <i class="fas fa-calendar-alt form-icon"></i>
+                                </div>
+                            </div>
+                            <!-- Gender -->
+                            <div class="form-group">
+                                <label class="form-label">الجنس</label>
+                                <select class="form-select">
+                                    <option value="" disabled selected>اختر الجنس</option>
+                                    <option value="male">ذكر</option>
+                                    <option value="female">أنثى</option>
+                                </select>
+                            </div>
+                            <!-- Case/Condition -->
+                            <div class="form-group">
+                                <label class="form-label">الحالة</label>
+                                <select class="form-select">
+                                    <option value="" disabled selected>اختر الحالة</option>
+                                    <option value="autism">طيف توحد</option>
+                                    <option value="down">متلازمة داون</option>
+                                </select>
+                            </div>
+                            <!-- Speech Level -->
+                            <div class="form-group">
+                                <label class="form-label">مستوى النطق</label>
+                                <select class="form-select">
+                                    <option value="" disabled selected>اختر مستوى النطق</option>
+                                    <option value="none">لا ينطق</option>
+                                    <option value="low">كلمات بسيطة</option>
+                                    <option value="medium">جمل قصيرة</option>
+                                    <option value="high">يتحدث بطلاقة</option>
+                                </select>
+                            </div>
+                            <!-- Behavioral Challenge -->
+                            <div class="form-group">
+                                <label class="form-label">التحدي السلوكي الأبرز</label>
+                                <select class="form-select">
+                                    <option value="" disabled selected>اختر التحدي السلوكي الأبرز</option>
+                                    <option value="hyperactivity">فرط حركة</option>
+                                    <option value="aggression">عدوانية</option>
+                                    <option value="shyness">خجل اجتماعي</option>
+                                </select>
+                            </div>
+                            <!-- Independence -->
+                            <div class="form-group">
+                                <label class="form-label">الاستقلالية</label>
+                                <select class="form-select">
+                                    <option value="" disabled selected>اختر الاستقلالية</option>
+                                    <option value="dependent">غير مستقل</option>
+                                    <option value="partially">مستقل جزئياً</option>
+                                    <option value="independent">مستقل كلياً</option>
+                                </select>
+                            </div>
+                            <!-- Desired Goal -->
+                            <div class="form-group">
+                                <label class="form-label">الهدف المطلوب</label>
+                                <select class="form-select">
+                                    <option value="" disabled selected>اختر الهدف المطلوب</option>
+                                    <option value="communication">تحسين التواصل</option>
+                                    <option value="behavior">تعديل السلوك</option>
+                                    <option value="skills">تطوير المهارات</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Save Button -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn--save">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- ============================================
+             TRUST CARDS SECTION
+        ============================================= -->
+        <section class="trust-cards bg-light">
+            <div class="container">
+                <div class="trust-cards__grid">
+                    <!-- Experience Card -->
+                    <div class="trust-card trust-card--yellow">
+                        <div class="trust-card__icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="trust-card__content">
+                            <h3 class="trust-card__title">الخبرة</h3>
+                            <p class="trust-card__text">أخصائيون تخاطب و تربويون محترفون</p>
+                        </div>
+                    </div>
+                    <!-- Specialization Card -->
+                    <div class="trust-card trust-card--purple">
+                        <div class="trust-card__icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="trust-card__content">
+                            <h3 class="trust-card__title">التخصص</h3>
+                            <p class="trust-card__text">خطط علاجية وتأهيلية متخصصة</p>
+                        </div>
+                    </div>
+                    <!-- Trust Card -->
+                    <div class="trust-card trust-card--green">
+                        <div class="trust-card__icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="trust-card__content">
+                            <h3 class="trust-card__title">الثقة</h3>
+                            <p class="trust-card__text">المصداقية والأمانة في التعامل</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             NEWSLETTER SECTION
+        ============================================= -->
+        <section class="newsletter newsletter--alt">
+            <div class="container">
+                <h2 class="newsletter__title">احصل على جميع أخبارنا وعروضنا في مكان واحد</h2>
+                <form class="newsletter__form" id="newsletterForm">
+                    <input type="email" class="newsletter__input" placeholder="أدخل البريد الإلكتروني" required
+                        aria-label="البريد الإلكتروني">
+                    <button type="submit" class="btn btn--primary newsletter__btn">تسجيل الدخول</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Footer Logo & Description -->
+                <div class="footer__brand">
+                    <img src="images/footer-logo.png" alt="جسر الأمل" class="footer__logo">
+                    <p class="footer__description">
+                        نهتم بتوفير الدعم اللازم لذوي الاحتياجات الخاصة في مجال اضطراب طيف التوحد و متلازمة داون ، فهو
+                        بمثابة شريان حياة للآباء .
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="فيسبوك"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="انستقرام"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer__links">
+                    <h3 class="footer__heading">روابط أخرى</h3>
+                    <ul class="footer__link-list">
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">مركز المساعدة</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer__contact">
+                    <h3 class="footer__heading">معلومات التواصل</h3>
+                    <ul class="footer__contact-list">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:bridge-of-hope@gmail.com">bridge-of-hope@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+966123456789">+966 123 456 7890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+201234567890">+20 123 4567 890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>الرياض، المملكة العربية السعودية</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <p>جميع الحقوق محفوظة لشركة تسوق © 2026 – جسر الأمل</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
